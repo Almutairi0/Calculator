@@ -23,3 +23,11 @@ A simple command-line calculator in Java that performs basic arithmetic operatio
    ```bash
    git clone https://github.com/Almutairi0/Calculator.git
    cd Calculator
+
+2. Compile the java files
+   ```bash
+   javac Main.java Calculator.java
+
+3.Run the program
+  ```bash
+java Main
