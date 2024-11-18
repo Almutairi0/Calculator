@@ -3,8 +3,8 @@ public class Main {
         Calculator calculator = new Calculator();
         calculator.add();
         calculator.subtract();
-        calculator.multiply();
         calculator.divide();
+        calculator.multiply();
     }
 
 }

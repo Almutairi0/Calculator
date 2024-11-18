@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.io.*;
+import java.util.Locale;
 public class Calculator {
-    Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in).useLocale(Locale.US);
     double input1, input2, result;
     public Calculator() {
 
@@ -21,8 +22,13 @@ public class Calculator {
             System.out.println("The result is: " + result);
     }
     public void multiply() {
-        result = input1 * input2;
-        System.out.println("The result is: " + result);
+        try {
+            result = input1 * input2;
+            System.out.println("The result is: " + result);
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
     public void divide() {
         try {
